@@ -1,0 +1,27 @@
+EDA PART : 
+there are 7043 customers in total
+column name "TotalCharges" has int values but stated as str. edit - fixed and converted them to float and found out there are 11 missing values in this column
+churn (Y) is not balanced ig as there are No - 5174 (not left within the last month) and Yes - 1869 (left within the last month)
+
+UNIVARIATE PART : (Not much important)
+tenure - most of the customers has stayed for less than 5 months
+MonthlyCharges - most of the customers has less than $20 monthly charges means most of them are paying low
+TotalCharges - most of the customers are in the range 0-1000 then this keeps in decreasing as TotalCharges increases upto 8684.8
+
+CATEGORICAL PART : 
+Contract - data is kinda balanced here but in case of churn most of the people are leaving after month-to-month contract which makes sense tho coz people staying are already have higher contracts
+internetservice - range = fiber > dsl > no. here most of the customers leaving were using fiber 
+Payment Method - most of the customers were using Electronic check and most of customers leaving are from this group too
+
+BIVARIATE PART : 
+More analysis 
+Churn vs tenure - as expected customers leaving are from lower tenure (around 4-30) 
+churn vs monthly charges - leaving customers are those with higher charges only
+
+RELATIONS with CATEGORICAL DATA :
+Contract churn rate : in monthly contracts 43% customers leads to churn, in one year contract around 11% customers leads to churn and in 2 year contract around 3 percent customers churns
+Payment method churn rate : Bank transfer (automatic) 17 % churn, Credit card (automatic) 15 % churn, Electronic check 45% churn, Mailed check 19% churn
+Internet service churn rate : DSL 19% customers churns, Fiber optic 42% churn, and only 7% churn in no internet service 
+
+tenure by contract type : as the contract period increases tenure increases too
+Is fiber optic associated with higher monthly charges? : customers with fiber optics pays higher amount then dsl
