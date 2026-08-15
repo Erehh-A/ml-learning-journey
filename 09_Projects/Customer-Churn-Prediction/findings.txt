@@ -25,3 +25,7 @@ Internet service churn rate : DSL 19% customers churns, Fiber optic 42% churn, a
 
 tenure by contract type : as the contract period increases tenure increases too
 Is fiber optic associated with higher monthly charges? : customers with fiber optics pays higher amount then dsl
+
+PREPROCESSING : 
+for the missing values of totalcharges : these values shows something unusual because customers having NaN totalcharges have "0" tenure period but churn is "No". what's the meaning of having tenure 0 and not leaving the organization too. 
+meanwhile monthly charges are completely random between 19.70 and 80.85. (REASON - These are new customers)
