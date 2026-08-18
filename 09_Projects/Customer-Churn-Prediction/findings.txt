@@ -29,3 +29,7 @@ Is fiber optic associated with higher monthly charges? : customers with fiber op
 PREPROCESSING : 
 for the missing values of totalcharges : these values shows something unusual because customers having NaN totalcharges have "0" tenure period but churn is "No". what's the meaning of having tenure 0 and not leaving the organization too. 
 meanwhile monthly charges are completely random between 19.70 and 80.85. (REASON - These are new customers)
+
+EVALUATION : 
+Confusion matrix - 175 values are false positive which is not good i guess
+precision and recall for "1" is low, so i guess there need some improvement

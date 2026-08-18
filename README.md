@@ -1,119 +1,246 @@
 # 🚀 ML Learning Journey
 
-> My journey of learning Machine Learning from scratch while documenting everything I build.
+> My journey of learning Machine Learning from fundamentals to building and deploying real-world ML projects.
 
 ## 👋 About
 
-Hi! I'm currently a B.Tech student from India and this repository documents my Machine Learning learning journey.
+Hi! I'm a B.Tech student from India currently entering my 3rd year.
 
-My goal is to become internship-ready for Machine Learning roles by building strong fundamentals and real-world projects.
+This repository documents my journey of learning **Machine Learning, Data Science, and ML Engineering** by building things rather than only completing courses.
 
-Instead of just watching tutorials, I'm practicing every concept by writing code, experimenting with datasets, and uploading my progress here.
+I'm using this repository to keep track of the concepts I learn, the experiments I run, the problems I encounter, and the projects I build.
 
----
+### 🎯 Current Goal
 
-## 🎯 Goals
-
-- Learn Machine Learning from scratch
-- Build end-to-end ML projects
-- Maintain consistency through GitHub
-- Create a strong portfolio for internships
-- Document everything I learn
+My long-term goal is to become **internship and job-ready for Machine Learning roles**, with a focus on remote opportunities, internships, and eventually full-time ML/ML Engineering roles.
 
 ---
 
-## 📚 Learning Roadmap
+## 📚 What I've Learned
 
-### ✅ Completed
+### 🐍 Python & Development Tools
 
-- [x] Git & GitHub Basics
-- [x] Python Revision
-- [x] NumPy
-- [x] Pandas
+* [x] Python fundamentals & revision
+* [x] Git & GitHub basics
+* [x] Git workflow — repositories, commits, branches, push/pull, etc.
 
-### 🔄 Currently Learning
+### 📊 Data Science
 
-- [ ] Matplotlib
-- [ ] Seaborn
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] Feature Engineering
+* [x] NumPy
+* [x] Pandas
+* [x] Matplotlib
+* [x] Seaborn
+* [x] Exploratory Data Analysis (EDA)
+* [x] Univariate Analysis
+* [x] Bivariate Analysis
+* [x] Data cleaning
+* [x] Feature Engineering fundamentals
+* [x] Handling missing values
+* [x] Standardization & Normalization
+* [x] Categorical data encoding
 
-### 📌 Upcoming
+### 🤖 Machine Learning
 
-- [ ] Linear Regression
-- [ ] Logistic Regression
-- [ ] KNN
-- [ ] Decision Trees
-- [ ] Random Forest
-- [ ] Model Evaluation
-- [ ] Streamlit
-- [ ] End-to-End ML Project
-- [ ] Deployment
+* [x] Train/Test Split
+* [x] Logistic Regression
+* [x] Classification
+* [x] Confusion Matrix
+* [x] Accuracy
+* [x] Precision
+* [x] Recall
+* [x] F1 Score
+* [x] ROC-AUC
+* [x] Scikit-learn Pipelines
+* [x] ColumnTransformer
+* [x] One-Hot Encoding
+* [x] StandardScaler
+
+### 🚧 Currently Working On
+
+* [ ] Improving model performance
+* [ ] Comparing multiple ML models
+* [ ] Model interpretation & feature importance
+* [ ] Streamlit application
+* [ ] Model deployment
+* [ ] Project documentation & presentation
 
 ---
 
-## 📂 Repository Structure
+# 🧠 Current Project
 
+## 📞 Customer Churn Prediction
+
+My first end-to-end Machine Learning project.
+
+### Problem
+
+Telecommunication companies lose customers when they cancel their services. The goal of this project is to use customer information to predict whether a customer is likely to churn.
+
+### Dataset
+
+The project uses a Telco Customer Churn dataset containing **7,043 customer records and 21 columns**.
+
+### 🔎 EDA Findings
+
+Some interesting patterns discovered during EDA:
+
+* The dataset contains approximately **73.5% non-churned and 26.5% churned customers**.
+* Month-to-month customers have a significantly higher churn rate (~42.7%) compared with one-year (~11.3%) and two-year (~2.8%) contracts.
+* Customers using electronic checks have a substantially higher churn rate (~45%).
+* Fiber-optic customers have a much higher churn rate (~42%) compared with DSL (~19%).
+* Customers who churn generally have shorter tenure.
+* Customers who churn tend to have higher monthly charges.
+* `TotalCharges` was stored as a string and required conversion to a numerical datatype.
+* 11 missing `TotalCharges` values were identified and investigated; all corresponded to customers with zero tenure.
+
+### ⚙️ ML Pipeline
+
+```text
+Raw Dataset
+     ↓
+Exploratory Data Analysis
+     ↓
+Data Cleaning
+     ↓
+Feature Engineering
+     ↓
+Train/Test Split
+     ↓
+Categorical Encoding
+     ↓
+Feature Scaling
+     ↓
+Logistic Regression
+     ↓
+Model Evaluation
 ```
+
+### 🛠️ Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Git & GitHub
+
+### 🚧 Project Status
+
+**In Progress**
+
+The initial Logistic Regression model and preprocessing pipeline have been implemented.
+
+Upcoming work includes model comparison, improvement, Streamlit deployment, and final project documentation.
+
+---
+
+# 📂 Repository Structure
+
+```text
 ml-learning-journey/
 │
-├── Python/
-├── NumPy/
-├── Pandas/
-├── Matplotlib/
-├── Seaborn/
-├── EDA/
-├── Feature Engineering/
-├── Machine Learning/
-└── Projects/
+├── 01_Python/
+│
+├── 02_NumPy/
+│
+├── 03_Pandas/
+│
+├── 04_Matplotlib/
+│
+├── 05_Seaborn/
+│
+├── 06_EDA/
+│
+├── 07_Feature Engineering/
+|
+├── 08_Evaluation
+│
+└── 09_Projects/
+    │
+    └── customer-churn-prediction/
+        │
+        ├── data/
+        ├── notebooks/
+        │   ├── 01_eda.ipynb
+        │   └── 02_preprocessing.ipynb
+        │
+        └── README.md
 ```
 
 ---
 
-## 🛠️ Tech Stack
+# 📈 Progress
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Git
-- GitHub
-
----
-
-## 📈 Progress
-
-| Topic                 |             Status |
-|-----------------------|--------------------|
-| Python                |  ✅               |
-| Git & GitHub          |  ✅               |
-| NumPy                 |  ✅               |
-| Pandas                |  ✅               |
-| Matplotlib            |  ✅               |
-| Seaborn               |  ✅               |
-| EDA                   |  ✅               |
-| Feature Engineering   |  ⏳               |
-| Machine Learning      |  ⏳               |
-| Projects              |  ⏳               |
+| Area                | Status |
+| ------------------- | :----: |
+| Python              |    ✅   |
+| Git & GitHub        |    ✅   |
+| NumPy               |    ✅   |
+| Pandas              |    ✅   |
+| Matplotlib          |    ✅   |
+| Seaborn             |    ✅   |
+| EDA                 |    ✅   |
+| Feature Engineering |    ✅   |
+| Data Preprocessing  |    ✅   |
+| Logistic Regression |    ✅   |
+| Model Evaluation    |    ✅   |
+| ML Projects         |   🚧    |
+| Model Comparison    |    ⏳   |
+| Streamlit           |    ⏳   |
+| Deployment          |    ⏳   |
 
 ---
 
-## 💡 Why this repository?
+# 🎯 What's Next?
 
-This repository serves as my public learning log.
+My next focus is moving from learning individual ML concepts to becoming comfortable with the **complete ML development workflow**.
 
-Every commit represents something new I've learned, practiced, or built.
+```text
+Learn
+  ↓
+Experiment
+  ↓
+Build
+  ↓
+Evaluate
+  ↓
+Improve
+  ↓
+Deploy
+  ↓
+Repeat
+```
 
-My aim is to focus on understanding concepts rather than just completing courses.
+The goal isn't to memorize every library or algorithm.
+
+The goal is to become capable of taking a problem, working with real data, building an ML solution, evaluating it properly, and eventually deploying it as a usable application.
+
+---
+
+## 💡 Why This Repository Exists
+
+This repository is more than a collection of notebooks.
+
+It is a public record of my progress toward becoming an ML Engineer.
+
+I use it to document:
+
+* Concepts I learn
+* Experiments I perform
+* Projects I build
+* Mistakes and problems I encounter
+* Solutions I discover
+* Progress over time
+
+Every meaningful commit represents another step forward.
 
 ---
 
 ## 🤝 Feedback
 
-If you have suggestions for improving my code, repository structure, or learning approach, feel free to open an issue or connect with me.
+I'm still learning, so feedback on my code, projects, ML approach, and repository structure is always welcome.
 
-I'm always open to learning.
+If you find something that could be improved, feel free to open an issue or reach out.
 
-⭐ If you find this repository helpful, consider giving it a star!
+⭐ If you find this journey interesting, consider giving the repository a star!
