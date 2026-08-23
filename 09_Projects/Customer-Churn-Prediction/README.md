@@ -10,8 +10,8 @@ The app does **not** retrain the model. It loads the saved pipeline, sends it on
 
 ## App Preview
 
-![Customer Churn Predictor](first.png)
-![Customer Churn Predictor](second.png)
+![Customer Churn Predictor](images/first.png)
+![Customer Churn Predictor](images/second.png)
 
 ## Project layout
 
