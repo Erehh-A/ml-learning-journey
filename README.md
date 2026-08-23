@@ -10,12 +10,6 @@ This repository documents my journey of learning **Machine Learning, Data Scienc
 
 I'm using this repository to keep track of the concepts I learn, the experiments I run, the problems I encounter, and the projects I build.
 
-### 🎯 Current Goal
-
-My long-term goal is to become **internship and job-ready for Machine Learning roles**, with a focus on remote opportunities, internships, and eventually full-time ML/ML Engineering roles.
-
----
-
 ## 📚 What I've Learned
 
 ### 🐍 Python & Development Tools
@@ -43,6 +37,9 @@ My long-term goal is to become **internship and job-ready for Machine Learning r
 
 * [x] Train/Test Split
 * [x] Logistic Regression
+* [x] Decision Trees
+* [x] Random Forest
+* [x] Gradient Boosting / XGBoost
 * [x] Classification
 * [x] Confusion Matrix
 * [x] Accuracy
@@ -50,19 +47,29 @@ My long-term goal is to become **internship and job-ready for Machine Learning r
 * [x] Recall
 * [x] F1 Score
 * [x] ROC-AUC
+* [x] Classification threshold tuning and precision–recall trade-offs
+* [x] Model comparison
+* [x] Hyperparameter tuning with GridSearchCV
+* [x] Logistic Regression coefficient interpretation
 * [x] Scikit-learn Pipelines
 * [x] ColumnTransformer
 * [x] One-Hot Encoding
 * [x] StandardScaler
 
+### 🛠️ ML Applications & Workflow
+
+* [x] Saving and loading trained models with Joblib
+* [x] Building a Streamlit ML application
+* [x] Deploying a Streamlit application
+
 ### 🚧 Currently Working On
 
-* [ ] Improving model performance
-* [ ] Comparing multiple ML models
-* [ ] Model interpretation & feature importance
-* [ ] Streamlit application
-* [ ] Model deployment
-* [ ] Project documentation & presentation
+* [x] Improving model performance
+* [x] Comparing multiple ML models
+* [x] Model interpretation & feature importance
+* [x] Streamlit application
+* [x] Model deployment
+* [x] Project documentation & presentation
 
 ---
 
@@ -106,13 +113,19 @@ Feature Engineering
      ↓
 Train/Test Split
      ↓
-Categorical Encoding
+Categorical Encoding + Feature Scaling
      ↓
-Feature Scaling
+Model Comparison and Hyperparameter Tuning
      ↓
-Logistic Regression
+Logistic Regression Pipeline
      ↓
-Model Evaluation
+Model Evaluation and Threshold Tuning (0.40)
+     ↓
+Coefficient Interpretation
+     ↓
+Save Model with Joblib
+     ↓
+Streamlit App and Deployment
 ```
 
 ### 🛠️ Technologies Used
@@ -123,15 +136,17 @@ Model Evaluation
 * Matplotlib
 * Seaborn
 * Scikit-learn
+* Joblib
+* Streamlit
 * Git & GitHub
 
-### 🚧 Project Status
+### ✅ Project Status
 
-**In Progress**
+**Completed and deployed**
 
-The initial Logistic Regression model and preprocessing pipeline have been implemented.
+The project includes preprocessing, model comparison, hyperparameter tuning, threshold tuning, Logistic Regression coefficient interpretation, and a saved Logistic Regression pipeline. The Streamlit app loads the saved model, predicts churn from raw customer inputs, and uses a decision threshold of **0.40**.
 
-Upcoming work includes model comparison, improvement, Streamlit deployment, and final project documentation.
+🚀 [Try the deployed Customer Churn Predictor](https://customer-churn-predictor-5cewbvfxsmjufenjrvdwxl.streamlit.app/)
 
 ---
 
@@ -153,18 +168,22 @@ ml-learning-journey/
 ├── 06_EDA/
 │
 ├── 07_Feature Engineering/
-|
-├── 08_Evaluation
+│
+├── 08_Evaluation/
 │
 └── 09_Projects/
     │
     └── customer-churn-prediction/
         │
         ├── data/
+        ├── models/
+        │   ├── churn_model.pkl
+        │   └── threshold.pkl
         ├── notebooks/
         │   ├── 01_eda.ipynb
         │   └── 02_preprocessing.ipynb
-        │
+        ├── app.py
+        ├── requirements.txt
         └── README.md
 ```
 
@@ -172,29 +191,30 @@ ml-learning-journey/
 
 # 📈 Progress
 
-| Area                | Status |
-| ------------------- | :----: |
-| Python              |    ✅   |
-| Git & GitHub        |    ✅   |
-| NumPy               |    ✅   |
-| Pandas              |    ✅   |
-| Matplotlib          |    ✅   |
-| Seaborn             |    ✅   |
-| EDA                 |    ✅   |
-| Feature Engineering |    ✅   |
-| Data Preprocessing  |    ✅   |
-| Logistic Regression |    ✅   |
-| Model Evaluation    |    ✅   |
-| ML Projects         |   🚧    |
-| Model Comparison    |    ⏳   |
-| Streamlit           |    ⏳   |
-| Deployment          |    ⏳   |
+| Area | Status |
+| --- | :---: |
+| Python | ✅ |
+| Git & GitHub | ✅ |
+| NumPy | ✅ |
+| Pandas | ✅ |
+| Matplotlib | ✅ |
+| Seaborn | ✅ |
+| EDA | ✅ |
+| Feature Engineering | ✅ |
+| Data Preprocessing | ✅ |
+| Logistic Regression | ✅ |
+| Model Evaluation | ✅ |
+| Model Comparison | ✅ |
+| Hyperparameter Tuning | ✅ |
+| Streamlit | ✅ |
+| Deployment | ✅ |
+| ML Projects | ✅ |
 
 ---
 
 # 🎯 What's Next?
 
-My next focus is moving from learning individual ML concepts to becoming comfortable with the **complete ML development workflow**.
+My next focus is building more end-to-end projects and strengthening my understanding of the **complete ML development workflow**.
 
 ```text
 Learn
@@ -214,7 +234,7 @@ Repeat
 
 The goal isn't to memorize every library or algorithm.
 
-The goal is to become capable of taking a problem, working with real data, building an ML solution, evaluating it properly, and eventually deploying it as a usable application.
+The goal is to become capable of taking a problem, working with real data, building an ML solution, evaluating it properly, and deploying it as a usable application.
 
 ---
 
