@@ -4,6 +4,15 @@ A beginner-friendly Streamlit web app that uses a previously trained scikit-lear
 
 The app does **not** retrain the model. It loads the saved pipeline, sends it one raw customer row, gets a churn probability, and applies the project decision threshold of **0.40**.
 
+## Live Demo
+
+[Try the Customer Churn Predictor](https://customer-churn-predictor-5cewbvfxsmjufenjrvdwxl.streamlit.app/)
+
+## App Preview
+
+![Customer Churn Predictor](first.png)
+![Customer Churn Predictor](second.png)
+
 ## Project layout
 
 ```text
