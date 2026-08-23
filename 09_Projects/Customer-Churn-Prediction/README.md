@@ -33,6 +33,15 @@ A lower threshold makes the model more willing to classify a customer as likely 
 
 The threshold was selected by comparing precision, recall, and F1-score across multiple thresholds.
 
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- Scikit-learn
+- Joblib
+- Streamlit
+- Logistic Regression
+
 ## Project layout
 
 ```text
@@ -89,15 +98,6 @@ The app collects the standard raw Telco fields and then uses the column names st
 ## Note on input fields
 
 The common IBM Telco dataset has 19 usable raw input columns after removing `customerID` and `Churn`. If your final pipeline was trained with a reduced set (for example, 17 columns), the app automatically sends only the exact columns stored in that pipeline.
-
-## 🛠️ Tech Stack
-
-- Python
-- Pandas
-- Scikit-learn
-- Joblib
-- Streamlit
-- Logistic Regression
 
 ## 📌 Dataset
 
