@@ -1,6 +1,6 @@
 # Telco Customer Churn Predictor
 
-A beginner-friendly Streamlit web app that uses a previously trained scikit-learn Logistic Regression pipeline to estimate whether a Telco customer is likely to churn.
+A Streamlit web app that uses a trained scikit-learn Logistic Regression pipeline to estimate the likelihood of customer churn.
 
 The app does **not** retrain the model. It loads the saved pipeline, sends it one raw customer row, gets a churn probability, and applies the project decision threshold of **0.40**.
 
@@ -12,6 +12,26 @@ The app does **not** retrain the model. It loads the saved pipeline, sends it on
 
 ![Customer Churn Predictor](images/first.png)
 ![Customer Churn Predictor](images/second.png)
+
+## 📊 Model Performance
+
+The final Logistic Regression pipeline achieved:
+
+- **Test ROC-AUC:** 0.856
+- **Accuracy:** 0.79
+- **Churn Precision:** 0.60
+- **Churn Recall:** 0.66
+- **Churn F1-score:** 0.62
+
+The classification threshold was set to **0.40** instead of the default 0.50 to improve the model's ability to identify potential churners.
+
+## 🎯 Decision Threshold
+
+The default classification threshold is 0.50, but this project uses **0.40**.
+
+A lower threshold makes the model more willing to classify a customer as likely to churn. This increases recall for the churn class, helping identify more potential churners at the cost of some precision.
+
+The threshold was selected by comparing precision, recall, and F1-score across multiple thresholds.
 
 ## Project layout
 
@@ -69,3 +89,20 @@ The app collects the standard raw Telco fields and then uses the column names st
 ## Note on input fields
 
 The common IBM Telco dataset has 19 usable raw input columns after removing `customerID` and `Churn`. If your final pipeline was trained with a reduced set (for example, 17 columns), the app automatically sends only the exact columns stored in that pipeline.
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas
+- Scikit-learn
+- Joblib
+- Streamlit
+- Logistic Regression
+
+## 📌 Dataset
+
+This project uses the IBM Telco Customer Churn dataset.
+
+The dataset contains customer demographic information, account information,
+services used, and billing information. The target variable is `Churn`,
+which indicates whether the customer left the company.
