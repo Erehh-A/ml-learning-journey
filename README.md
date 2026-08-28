@@ -212,31 +212,20 @@ ml-learning-journey/
 
 ---
 
-# 🎯 What's Next?
+# 🚧 Currently Working On
 
-My next focus is building more end-to-end projects and strengthening my understanding of the **complete ML development workflow**.
+I'm currently **sharpening my Machine Learning skills** by practicing the concepts and workflow I used in my first end-to-end project.
 
-```text
-Learn
-  ↓
-Experiment
-  ↓
-Build
-  ↓
-Evaluate
-  ↓
-Improve
-  ↓
-Deploy
-  ↓
-Repeat
-```
-
-The goal isn't to memorize every library or algorithm.
-
-The goal is to become capable of taking a problem, working with real data, building an ML solution, evaluating it properly, and deploying it as a usable application.
+The focus is on becoming more comfortable writing ML code independently, understanding the decisions behind the workflow, and strengthening my fundamentals.
 
 ---
+
+
+# 🎯 What's Next?
+
+Once I have strengthened my ML fundamentals, I'll gradually move towards **Deep Learning** and continue expanding my knowledge by building projects along the way.
+
+The goal is to keep learning, practicing, and building rather than rushing through a checklist of topics.
 
 ## 💡 Why This Repository Exists
 
