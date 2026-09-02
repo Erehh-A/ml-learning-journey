@@ -4,7 +4,7 @@
 
 ## 👋 About
 
-Hi! I'm a B.Tech student from India currently entering my 3rd year.
+Hi! I'm Ayush, a B.Tech student from India currently in my 3rd year.
 
 This repository documents my journey of learning **Machine Learning, Data Science, and ML Engineering** by building things rather than only completing courses.
 
