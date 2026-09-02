@@ -1,6 +1,6 @@
 # 🚀 ML Learning Journey
 
-> My journey of learning Machine Learning from fundamentals to building and deploying real-world ML projects.
+> My journey of learning Machine Learning, Deep Learning, and AI from fundamentals to building and deploying real-world projects.
 
 ## 👋 About
 
@@ -70,6 +70,16 @@ I'm using this repository to keep track of the concepts I learn, the experiments
 * [x] Streamlit application
 * [x] Model deployment
 * [x] Project documentation & presentation
+
+### 🧠 Deep Learning
+
+Currently starting my Deep Learning journey, beginning with neural network fundamentals.
+
+- [ ] Neural Networks fundamentals
+- [ ] Forward & backward propagation
+- [ ] Loss functions & optimization
+- [ ] PyTorch
+- [ ] Deep Learning projects
 
 ---
 
@@ -155,6 +165,8 @@ The project includes preprocessing, model comparison, hyperparameter tuning, thr
 ```text
 ml-learning-journey/
 │
+├── 00_datasets/
+│
 ├── 01_Python/
 │
 ├── 02_NumPy/
@@ -167,24 +179,16 @@ ml-learning-journey/
 │
 ├── 06_EDA/
 │
-├── 07_Feature Engineering/
+├── 07_Feature_Engineering/
 │
 ├── 08_Evaluation/
 │
-└── 09_Projects/
-    │
-    └── customer-churn-prediction/
-        │
-        ├── data/
-        ├── models/
-        │   ├── churn_model.pkl
-        │   └── threshold.pkl
-        ├── notebooks/
-        │   ├── 01_eda.ipynb
-        │   └── 02_preprocessing.ipynb
-        ├── app.py
-        ├── requirements.txt
-        └── README.md
+├── 09_Projects/
+│
+├── 10_Remaining_Topics/
+│
+└── 11_Deep_Learning/
+    └── 01_Neural_Networks/
 ```
 
 ---
@@ -209,23 +213,28 @@ ml-learning-journey/
 | Streamlit | ✅ |
 | Deployment | ✅ |
 | ML Projects | ✅ |
+| Deep Learning | 🔄 |
 
 ---
 
 # 🚧 Currently Working On
 
-I'm currently **sharpening my Machine Learning skills** by practicing the concepts and workflow I used in my first end-to-end project.
+I'm currently **starting my Deep Learning journey** after revising and strengthening the Machine Learning concepts used in my first end-to-end project.
 
-The focus is on becoming more comfortable writing ML code independently, understanding the decisions behind the workflow, and strengthening my fundamentals.
+My current focus is on understanding **neural network fundamentals** and learning how models learn through forward propagation, loss functions, backpropagation, and optimization.
+
+I'm also continuing to practice the Machine Learning concepts I've already learned so that I become more comfortable implementing them independently.
 
 ---
 
 
 # 🎯 What's Next?
 
-Once I have strengthened my ML fundamentals, I'll gradually move towards **Deep Learning** and continue expanding my knowledge by building projects along the way.
+My next step is to build a strong foundation in **Deep Learning**, starting with neural networks and gradually moving toward practical implementations using PyTorch.
 
-The goal is to keep learning, practicing, and building rather than rushing through a checklist of topics.
+After building a solid Deep Learning foundation, I'll explore areas such as **Computer Vision, NLP, Transformers, LLMs, Generative AI, RAG, and Reinforcement Learning**.
+
+The goal is to learn these technologies through a combination of fundamentals, experimentation, and projects rather than simply completing a list of courses.
 
 ## 💡 Why This Repository Exists
 
